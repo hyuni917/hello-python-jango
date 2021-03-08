@@ -57,4 +57,5 @@
 
 ###### 참고
 * https://docs.python.org/3.9/
+* https://docs.djangoproject.com/en/3.1/
 * https://getbootstrap.com/docs/4.6/getting-started/introduction/
