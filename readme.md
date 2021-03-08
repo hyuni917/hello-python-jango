@@ -10,8 +10,7 @@
 
 ###### 가상환경 활성화
 ```
-> (mac) source venv/bin/activate
-> (win) venv/bin/activate
+> source venv/bin/activate
 ```
 
 ###### 장고 설치
