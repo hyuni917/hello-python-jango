@@ -19,3 +19,9 @@
 ```
 > pip3 install django
 ```
+
+###### 장고 프로젝트 생성
+```
+> django-admin startproject community
+> cd community
+```
