@@ -1,4 +1,3 @@
-
 ###### 가상환경 설정을 위한 패키지 설치
 ```
 > pip3 install virtualenv
@@ -54,4 +53,8 @@
 ```
 
 ###### 장고 admin
-http://127.0.0.1:8000/admin
+* http://127.0.0.1:8000/admin
+
+###### 참고
+* https://docs.python.org/3.9/
+* https://getbootstrap.com/docs/4.6/getting-started/introduction/
