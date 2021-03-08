@@ -10,7 +10,8 @@
 
 ###### 가상환경 활성화
 ```
-> source venv/bin/activate
+> (mac) source venv/bin/activate
+> (win) call venv/scripts/activate
 ```
 
 ###### 장고 설치
@@ -38,17 +39,24 @@
 
 ###### python3 manage.py cmd   
 ```
-> python3 manage.py makemigrations
-> python3 manage.py migrate
-> python3 manage.py runserver
-> python3 manage.py createsuperuser
+> (mac) python3 manage.py makemigrations
+> (win) manage.py makemigrations
+
+> (mac) python3 manage.py migrate
+> (win) manage.py migrate
+
+> (mac) python3 manage.py runserver
+> (win) manage.py runserver
+
+> (mac) python3 manage.py createsuperuser
+> (win) manage.py createsuperuser
 ```
 
 ###### sqlite3 명령어 
 ```
 > sqlite3 db.sqlite3
 > .tables
-> .schema fcuser
+> .schema user
 ```
 
 ###### 장고 admin
@@ -57,5 +65,6 @@
 ###### 참고
 * https://docs.python.org/3.9/
 * https://docs.djangoproject.com/en/3.1/
+* https://www.sqlite.org/index.html
 * https://getbootstrap.com/docs/4.6/getting-started/introduction/
 * https://bootswatch.com/darkly/
