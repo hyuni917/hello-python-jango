@@ -30,6 +30,10 @@ def login(request):
                 res_data['error']='비밀번호가 틀렸습니다!!!'
         return render(request, 'login.html', res_data)
 
+def logout(request):
+    if request.session.get('user'):
+        del(request.session['user'])
+    return redirect('/')
 
 def register(request):
     if request.method == 'GET':
