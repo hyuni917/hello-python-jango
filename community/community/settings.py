@@ -25,9 +25,10 @@ SECRET_KEY = '0^v@@uirtkj)g&hrpkw$lqcdnt@*6cuvldyr*hkbzp5$xd9t5j'
 DEBUG = False
 
 # 접속 허용 호스트
-ALLOWED_HOSTS = [
-    '*'
-]
+ALLOWED_HOSTS = (
+    '*',
+    # 'hyuni917.pythonanywhere.com',
+)
 
 # Application definition
 
