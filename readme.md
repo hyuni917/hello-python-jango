@@ -5,7 +5,7 @@
 
 ###### 가상환경 생성
 ```
-> virtualenv venv
+> virtualenv --python=python3.9 venv
 ```
 
 ###### 가상환경 활성화
@@ -50,6 +50,9 @@
 
 > (mac) python3 manage.py createsuperuser
 > (win) manage.py createsuperuser
+
+> (mac) python3 manage.py collectstatic
+> (win) manage.py collectstatic
 ```
 
 ###### sqlite3 명령어 
