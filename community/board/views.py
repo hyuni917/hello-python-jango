@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.http import Http404
 from user.models import User
 from .models import Board
 from .forms import BoardForm
@@ -6,11 +7,16 @@ from .forms import BoardForm
 
 # Create your views here.
 def board_detail(request, pk):
-    board = Board.objects.get(pk=pk)
+    try:
+        board = Board.objects.get(pk=pk)
+    except Board.DoesNotExist:
+        raise Http404('게시물을 찾을 수 없습니다.')
     return render(request, 'board_detail.html', {'board': board})
 
 
 def board_write(request):
+    if not request.session.get('user'):
+        return redirect('/user/login')
     if request.method == 'POST':
         form = BoardForm(request.POST)
         if form.is_valid():
@@ -25,6 +31,7 @@ def board_write(request):
     else:
         form = BoardForm()
     return render(request, 'board_write.html', {'form': form})
+
 
 def boar_list(request):
     boards = Board.objects.all().order_by('-id')
