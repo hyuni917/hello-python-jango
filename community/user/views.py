@@ -49,4 +49,4 @@ def register(request):
                 password=make_password(password)
             )
             user.save()
-        return render(request, 'register.html',res_data)
+    return render(request, 'register.html', res_data)
