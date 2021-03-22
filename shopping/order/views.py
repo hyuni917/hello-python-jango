@@ -1,6 +1,7 @@
 from django.shortcuts import redirect
 from .forms import RegisterForm
-from django.views.generic import FormView
+from django.views.generic import FormView, ListView
+from .models import Order
 
 
 # Create your views here.
@@ -19,3 +20,12 @@ class OrderCreate(FormView):
             'request': self.request
         })
         return kw
+
+
+class OrderList(ListView):
+    template_name = 'order.html'
+    context_object_name = 'order_list'
+
+    def get_queryset(self, **kwargs):
+        queryset = Order.objects.filter(user__email=self.request.session.get('user'))
+        return queryset
