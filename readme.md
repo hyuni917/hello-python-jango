@@ -60,6 +60,12 @@
 > (win) manage.py collectstatic
 ```
 
+###### uwsgi(Application Container)
+```
+> pip3 install uwsgi
+> uwsgi --http :8000 --home /home/venv/ --chdir /home/shopping/ --module shopping.wsgi
+```
+
 ###### sqlite3 명령어 
 ```
 > sqlite3 db.sqlite3
