@@ -5,9 +5,31 @@ from .forms import RegisterForm
 from order.forms import RegisterForm as OrderForm
 from django.utils.decorators import method_decorator
 from user.decorators import admin_required
+from rest_framework import generics, mixins
+from .serializers import ProductSerializer
 
 
 # Create your views here.
+class ProductListAPI(generics.GenericAPIView, mixins.ListModelMixin):
+    serializer_class = ProductSerializer
+
+    def get_queryset(self):
+        return Product.objects.all().order_by('id')
+
+    def get(self, request, *args, **kwargs):
+        return self.list(request, *args, **kwargs)
+
+
+class ProductDetailAPI(generics.GenericAPIView, mixins.RetrieveModelMixin):
+    serializer_class = ProductSerializer
+
+    def get_queryset(self):
+        return Product.objects.all().order_by('id')
+
+    def get(self, request, *args, **kwargs):
+        return self.retrieve(request, *args, **kwargs)
+
+
 class ProductList(ListView):
     model = Product
     template_name = 'product.html'

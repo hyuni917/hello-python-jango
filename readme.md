@@ -19,6 +19,11 @@
 > pip3 install django
 ```
 
+###### 장고 rest framework 설치
+```
+> pip3 install djangorestframework
+```
+
 ###### 장고 프로젝트 생성
 ```
 > django-admin startproject community
@@ -72,3 +77,5 @@
 * https://getbootstrap.com/docs/4.6/getting-started/introduction/
 * https://summernote.org/
 * https://bootswatch.com/darkly/
+* https://docs.microsoft.com/ko-kr/azure/architecture/best-practices/api-design
+* https://www.django-rest-framework.org/
