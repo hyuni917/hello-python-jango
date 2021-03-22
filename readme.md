@@ -70,4 +70,5 @@
 * https://docs.djangoproject.com/en/3.1/
 * https://www.sqlite.org/index.html
 * https://getbootstrap.com/docs/4.6/getting-started/introduction/
+* https://summernote.org/
 * https://bootswatch.com/darkly/
