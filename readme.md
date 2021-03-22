@@ -79,3 +79,4 @@
 * https://bootswatch.com/darkly/
 * https://docs.microsoft.com/ko-kr/azure/architecture/best-practices/api-design
 * https://www.django-rest-framework.org/
+* https://jquery.com/
