@@ -42,7 +42,7 @@
 > cd ..
 ```
 
-###### python3 manage.py cmd   
+###### python3 manage.py cmd
 ```
 > (mac) python3 manage.py makemigrations
 > (win) manage.py makemigrations
@@ -72,7 +72,7 @@
 > flake8 hello.py
 ```
 
-###### sqlite3 명령어 
+###### sqlite3 명령어
 ```
 > sqlite3 db.sqlite3
 > .tables
